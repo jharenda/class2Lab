@@ -67,10 +67,10 @@ public class PageGenerator extends HttpServlet {
             out.println("</body>");
             out.println("</html>");
             out.println("<table>");
-            for(int row=0; row<3; row++) {
+            for(int row=1; row<5; row++) {
                 out.println("<tr>");
-                for(int col =0; col<3; col++) {
-                    out.println("td>" + "R"+ row + "C" + col + "</td");
+                for(int col =2; col<4; col++) {
+                    out.println("td>R" + row + "C" + col + "</td");
                 }
                 out.println("</tr>");
                 }
