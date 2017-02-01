@@ -18,12 +18,25 @@
                 
                 Object errObj = request.getAttribute("errorMsg");
                 if (responseObj != null) {
-                    out.println(responseObj.toString());
+                  //  out.println(responseObj.toString());
                 }
                 if (errObj != null) {
                     out.println(errObj.toString());
                 }
+                
+String color; 
+if (responseObj.toString().equals("Evening Jen!")){
+color = "red";
+}
+else if (responseObj.toString().equals("Morning Jen")){
+    color = "yellow"; 
+}
+else color = "orange"; 
             %>
+            
+            ${myMsg}
+            
         </p>
+        <body style="background-color:<%=color%>;">
     </body>
 </html>

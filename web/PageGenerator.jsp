@@ -12,6 +12,24 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1>This is the table using a JSP Page</h1>
+        
+          <%
+              for(int row=1; row<5; row++) {
+                out.println("<tr>");
+                for(int col =2; col<7; col++) {
+                
+                    out.println("<td> R " + row  + " C " + col + "</td");
+                }
+                
+                out.println(" </tr>");
+                    out.print("<br>");
+                }
+            out.println("</table>");
+            
+              
+              %>
+        
+        
     </body>
 </html>

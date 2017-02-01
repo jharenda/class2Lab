@@ -34,8 +34,6 @@ public class WelcomeService {
         calMorningEnd.set(Calendar.HOUR, MORNING_END);
         calAfternoonEnd.set(Calendar.HOUR, AFTERNOON_END);
         
-       
-       
        if (cal.HOUR < calMorningEnd.HOUR) {
               timeOfDay = MORNING;
         } else if ( cal.HOUR > calMorningEnd.HOUR && cal.HOUR < calAfternoonEnd.HOUR) {
@@ -57,6 +55,9 @@ public class WelcomeService {
 
 
 /**
+ * 
+ * used old pre java 8 exampe
+ * joda time if using pre java 8 
  * 
  * 
  * 

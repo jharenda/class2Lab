@@ -43,36 +43,16 @@ public class PageGenerator extends HttpServlet {
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>Servlet PageGenerator at " + request.getContextPath() + "</h1>");
-            out.println("<table>");
-
-            out.println("<tr>");
-            out.println("<td></td>");
-            out.println("<td></td>");
-            out.println("<td></td>");
-            out.println("</tr>");
-
-            out.println("<tr>");
-            out.println("<td></td>");
-            out.println("<td></td>");
-            out.println("<td></td>");
-            out.println("</tr>");
-
-            out.println("<tr>");
-            out.println("<td></td>");
-            out.println("<td></td>");
-            out.println("<td></td>");
-            out.println("</tr>");
-
-            out.println("</table>");
-            out.println("</body>");
-            out.println("</html>");
-            out.println("<table>");
+            
             for(int row=1; row<5; row++) {
                 out.println("<tr>");
-                for(int col =2; col<4; col++) {
-                    out.println("td>R" + row + "C" + col + "</td");
+                for(int col =2; col<7; col++) {
+                
+                    out.println("<td> R " + row  + " C " + col + "</td");
                 }
-                out.println("</tr>");
+                
+                out.println(" </tr>");
+                    out.print("<br>");
                 }
             out.println("</table>");
             }
